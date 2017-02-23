@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+android:orientation="vertical"
+android:id="@+id/activity_address_list"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.ashar.newcomui_assgn1.AssignmentsList">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="List Of Assignments"
+    android:textSize="25dp"
+    android:textColor="#136a9b"/>
+
+<Button
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="assignment 1 Validation"
+    android:onClick="assignment1"
+    android:id="@+id/assignment1"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="35dp"
+    android:text="assignment 2 views"
+    android:onClick="movetoviews"
+    android:id="@+id/assignment2"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="35dp"
+    android:text="assignment 3 fragment "
+    android:onClick="assignment3"
+    android:id="@+id/fragment"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="35dp"
+    android:text="assignment  4 View Pager and tab views "
+    android:onClick="assignment4"
+    android:id="@+id/viewpager"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="35dp"
+    android:text=" assignment 5 expandables"
+    android:onClick="assignment5"
+    android:id="@+id/expandables"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="35dp"
+    android:text=" assignment 6 fragment listview"
+    android:onClick="assignment6"
+    android:id="@+id/fragmentlistview"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text=" assignment 7 infinite scrolling"
+        android:onClick="assignment7"
+        android:id="@+id/infinitescrolling"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text=" assignment 8 Json parsing"
+        android:onClick="assignment8"
+        android:id="@+id/jsonparsing"/>
+
+</LinearLayout>
+    </ScrollView>

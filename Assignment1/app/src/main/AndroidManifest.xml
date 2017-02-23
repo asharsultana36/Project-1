@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ashar.newcomui_assgn1">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity android:name=".AddNewCompany" />
+        <activity android:name=".CompanyDetails" />
+        <activity android:name=".UpdateAddressBook" />
+        <activity android:name=".AssignmentsList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddressBook" />
+        <activity android:name=".AddressBookRecycler" />
+        <activity android:name=".FragmentMain" />
+        <activity android:name=".ViewPagerAndTabView"></activity>
+        <activity android:name=".ViewPagerMainSwipe" />
+        <activity android:name=".ViewPagerMainScroll"></activity>
+        <activity android:name=".ViewPagerMain"></activity>
+        <activity android:name=".ListViewAndRecyclerView"></activity>
+        <activity android:name=".ExpandableListViewMain"/>
+        <activity android:name=".ListViewFragmentMain"></activity>
+        <activity android:name=".RecyclerViewInfiniteScrollMain"></activity>
+        <activity android:name=".json.JsonMainActivity"></activity>
+
+    </application>
+
+</manifest>

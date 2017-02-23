@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="view pager"
+        android:onClick="viewpager"
+        android:id="@+id/viewpager"/>
+    <Button
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Scroll view"
+        android:onClick="scrollview"
+        android:id="@+id/scrollview"/>
+    <Button
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text=" swipe view"
+        android:onClick="swipeview"
+        android:id="@+id/swipeview"/>
+
+</LinearLayout>

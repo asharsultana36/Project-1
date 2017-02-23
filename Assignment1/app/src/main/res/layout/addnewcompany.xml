@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/relative">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:text="Add New Company"
+    android:textAlignment="center"
+    android:id="@+id/tv_title"
+    android:padding="10dp"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    />
+<ScrollView
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ashar.newcomui_assgn1.MainActivity"
+    android:background="#FFFFFF"
+    android:layout_above="@+id/submit"
+    android:layout_below="@+id/tv_title">
+
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="@drawable/border">
+
+
+          <TextView
+              android:text="Company Name*"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/company_name_tv"
+              android:layout_marginRight="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:id="@+id/company_name_et"
+                android:background="@drawable/etborder"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:text="TIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tin_tv"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/etborder"
+                android:id="@+id/tin_et"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="11"
+                android:digits="0123456789"/>
+            <TextView
+                android:text="Company PAN*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pan_tv"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/etborder"
+                android:id="@+id/pan_et"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="10"/>
+            <TextView
+                android:text="Service Tax Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tax_tv"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/etborder"
+                android:id="@+id/tax_et"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Proprietor's Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/pro_tv"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text="Established"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/estb_tv"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/etborder"
+                    android:id="@+id/pro_et"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/etborder"
+                    android:layout_weight="1465"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/established"
+                    android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+                <TextView
+                    android:text="Address Line 1*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address1_tv"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:id="@+id/address1_et"
+                    android:background="@drawable/etborder"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:text="Address Line 2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address2_tv"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:ems="10"
+                    android:background="@drawable/etborder"
+                    android:id="@+id/address2_et"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="State*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/state_tv"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text="City*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/city_tv"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/etborder"
+                    android:layout_weight="50"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/state"
+
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/etborder"
+                    android:layout_weight="50"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/city"
+
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+        </LinearLayout>
+            <TextView
+                android:text="Pincode*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pincode_tv"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/pincode_et"
+                android:background="@drawable/etborder"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="6"
+                android:digits="0123456789"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:text="Any Contact at mSupply?*"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/text"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.52"
+                    />
+                <RadioGroup
+                    android:id="@+id/know"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioyes"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+
+                     />
+
+                    <RadioButton
+                        android:id="@+id/radiono"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+                        <!--android:backgroundTint="#76D7C4"/>-->
+
+                </RadioGroup>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/content"
+                android:hint="Provide mSupply representative's name here"
+                android:background="@drawable/etborder"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+</ScrollView>
+
+    <Button
+        android:backgroundTint="#76D7C4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/etborder"
+        android:id="@+id/submit"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onsave"
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>

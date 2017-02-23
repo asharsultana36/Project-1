@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android RecyclerView Infinite Scroll</string>
+
+
+
+    <string-array name="established_year">
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+    </string-array>
+    <string-array name="states">
+        <item>karnataka</item>
+        <item>Andhra Pradesh</item>
+        <item>kerala</item>
+        <item>Orissa</item>
+        <item>Tamil Nadu</item>
+    </string-array>
+    <string-array name="Andhra_city">
+        <item>Vizag</item>
+        <item>Vijayawada</item>
+        <item>Kakinada</item>
+        <item>Tirupati</item>
+        <item>Tanuku</item>
+    </string-array>
+    <string-array name="karnataka_city">
+        <item>Chikmagalur</item>
+        <item>Hubli</item>
+        <item>Bangalore</item>
+        <item>Mysore</item>
+        <item>Bellary</item>
+    </string-array>
+    <string-array name="kerela_city">
+        <item>Pathanamthitta</item>
+        <item>Attingal</item>
+        <item>Paravur</item>
+        <item>Kalamassery</item>
+        <item>Chavakkad</item>
+    </string-array>
+    <string-array name="Orissa_city">
+        <item>Bhadrak</item>
+        <item>Baripada</item>
+        <item>Balangir</item>
+        <item>Jharsuguda</item>
+        <item>Jaypur</item>
+    </string-array>
+    <string-array name="Tamil_city">
+        <item> Coimbatore</item>
+        <item>Tiruchirappali</item>
+        <item>Tirunelveli</item>
+        <item>Pondicherry</item>
+        <item>Tuticorin</item>
+    </string-array>
+    <string-array name="Customer_first_names">
+        <item>
+           Narun
+        </item>
+        <item>Abhishek</item>
+    </string-array>
+    <string-array name="Customer_last_names">
+        <item>
+            Sumant
+        </item>
+        <item>Sumant</item>
+    </string-array>
+    <string-array name="customer_address1">
+        <item>#007,A Street,#007 main bond </item>
+        <item>
+            #01,C street,#02 main bond area </item>
+    </string-array>
+
+    <string-array name="customer_address2">
+        <item>area sector - c </item>
+        <item>
+            near VV bakery
+        </item>
+    </string-array>
+    <string-array name="cities">
+        <item>Bangalore</item>
+    </string-array>
+    <string-array name="countries">
+        <item>India</item>
+
+    </string-array>
+
+    <string-array name="pincode">
+        <item>560007</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tin">tin</string>
+
+
+</resources>

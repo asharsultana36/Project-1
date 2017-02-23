@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Different Views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="list views"
+        android:onClick="assignment2"
+        android:id="@+id/assignment2"/>
+    <Button
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text=" RecyclerView"
+        android:onClick="assignmentr2"
+        android:id="@+id/assignment2_r"/>
+</LinearLayout>

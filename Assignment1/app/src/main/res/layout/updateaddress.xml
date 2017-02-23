@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/relative">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="New Address"
+        android:id="@+id/tv_title"
+        android:padding="10dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <ScrollView
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.ashar.newcomui_assgn1.MainActivity"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/submit"
+        android:layout_below="@+id/tv_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+
+            <TextView
+                android:text="First Name*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/First_name_tv"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:id="@+id/First_name_et"
+                android:background="@drawable/etborder"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:text="Last Name*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Last_Name_tv"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/etborder"
+                android:id="@+id/Last_Name_et"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="11"
+                android:digits="0123456789"/>
+            <TextView
+                android:text="Street Address 1*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Street_Address1_tv"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/etborder"
+                android:id="@+id/Street_Address1_et"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="30"/>
+            <TextView
+                android:text="Street Address 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Street_Address2_tv"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/etborder"
+                android:id="@+id/Street_Address2_et"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="30"/>
+            <TextView
+                android:text="Mobile Number*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Mobile_Number_tv"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/etborder"
+                android:id="@+id/Mobile_Number_et"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="State*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/state_tv"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text="City*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/city_tv"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/etborder"
+                    android:layout_weight="50"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/state"
+
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/etborder"
+                    android:layout_weight="50"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/city"
+
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/Country_tv"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:text="Pincode*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/Pincode_tv"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/etborder"
+                    android:layout_weight="50"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Country"
+
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/etborder"
+                    android:layout_weight="50"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pincode"
+
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                </LinearLayout>
+            <TextView
+                android:text="Address Type*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/Address_Type_tv"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/etborder"
+                android:layout_weight="1465"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/established"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:backgroundTint="#76D7C4"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="150sp"
+        android:layout_height="40dp"
+        android:textColor="#000000"
+        android:background="@drawable/etborder"
+        android:id="@+id/submit"
+        android:text="Update"
+        android:layout_alignParentBottom="true"
+        android:onClick="onsave"/>
+
+
+</RelativeLayout>
